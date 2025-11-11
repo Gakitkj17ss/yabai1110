@@ -13,7 +13,7 @@ def _norm2d(ch: int):
         return nn.BatchNorm2d(ch)
 
 
-class DSConvBlock(nn.Module):
+class ConvBlock(nn.Module):
     def __init__(self, in_ch, out_ch, stride=1):
         super().__init__()
         self.net = nn.Sequential(
